@@ -2,6 +2,7 @@ import time
 
 tiempos = {}
 
+#Funcion para medir tiempo de ejecucion
 def medir_tiempo(funcion):
     def wrapper(*args,**kwargs):
         inicio = time.time()
