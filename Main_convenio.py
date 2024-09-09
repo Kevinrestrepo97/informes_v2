@@ -38,8 +38,8 @@ concatenado_oficial()
 
 #Variables de llamada
 tipo = "Convenio"
-contratos = ["552 DE 2020"]
-CCosto = 33266
+contratos = ["57C DE 2024"]
+CCosto = 33271
 mes = "agosto"
 
 #Lectura de archivo

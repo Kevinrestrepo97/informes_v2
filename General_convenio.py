@@ -6,6 +6,7 @@ from dateutil.relativedelta import relativedelta
 #Funcion que devuelve los resutados desde la hoja general, convenios
 def general_convenio(df_dict:dict,contrato:str):
 
+
     df_general = df_dict["General"]
 
     df_general = df_general.loc[df_general["Convenio"] == contrato]

@@ -39,7 +39,7 @@ def concatenado_oficial():
     ruta = '../Formularios'
     # Guardar cada archivo con sus hojas correspondientes en un solo archivo Excel
     for archivo, hojas in dataframes_por_archivo.items():
-        ruta_archivo = os.path.join(ruta, archivo.replace('.xlsx', '1.xlsx'))
+        ruta_archivo = os.path.join(ruta, archivo.replace('.xlsx', '.xlsx'))
         with pd.ExcelWriter(ruta_archivo, engine='openpyxl') as writer:
             for hoja, df in hojas:
                 df.to_excel(writer, sheet_name=hoja, index=False)
